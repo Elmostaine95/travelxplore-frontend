@@ -1,0 +1,1 @@
+{"root":["./src/main.ts","./src/router.ts","./src/vite-env.d.ts","./src/lib/api.ts","./src/app.vue","./src/components/header.vue","./src/components/hotelrevealcard.vue","./src/components/worldmap.vue","./src/pages/bookingpage.vue","./src/pages/mainexperience.vue"],"errors":true,"version":"5.6.3"}
