@@ -26,7 +26,7 @@ jobs:
       - name: Build image
         run: |
           docker build \
-            --build-arg VITE_API_URL=/api \
+            --build-arg VITE_API_URL= \
             -t $IMAGE_NAME:latest .
 
       - name: Push image
