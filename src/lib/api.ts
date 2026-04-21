@@ -50,7 +50,7 @@ export async function postRegister(body: {
   email: string;
   password: string;
 }) {
-  const r = await fetch(`${base}/api/auth/register`, {
+  const r = await fetch(`${base}/auth/register`, {
     method: "POST",
     headers: mergeHeaders(
       { "Content-Type": "application/json" },
@@ -66,7 +66,7 @@ export async function postRegister(body: {
 }
 
 export async function postLogin(body: { email: string; password: string }) {
-  const r = await fetch(`${base}/api/auth/login`, {
+  const r = await fetch(`${base}/auth/login`, {
     method: "POST",
     headers: mergeHeaders(
       { "Content-Type": "application/json" },
@@ -83,7 +83,7 @@ export async function postLogin(body: { email: string; password: string }) {
 
 export async function verifyEmail(token: string) {
   const r = await fetch(
-    `${base}/api/auth/verify-email?token=${encodeURIComponent(token)}`,
+    `${base}/auth/verify-email?token=${encodeURIComponent(token)}`,
     { headers: mergeHeaders(localeHeaders()) }
   );
   if (!r.ok) {
@@ -94,7 +94,7 @@ export async function verifyEmail(token: string) {
 }
 
 export async function postResendVerification(body: { email: string }) {
-  const r = await fetch(`${base}/api/auth/resend-verification`, {
+  const r = await fetch(`${base}/auth/resend-verification`, {
     method: "POST",
     headers: mergeHeaders(
       { "Content-Type": "application/json" },
@@ -110,7 +110,7 @@ export async function postResendVerification(body: { email: string }) {
 }
 
 export async function postForgotPassword(body: { email: string }) {
-  const r = await fetch(`${base}/api/auth/forgot-password`, {
+  const r = await fetch(`${base}/auth/forgot-password`, {
     method: "POST",
     headers: mergeHeaders(
       { "Content-Type": "application/json" },
@@ -130,7 +130,7 @@ export async function postForgotPassword(body: { email: string }) {
 }
 
 export async function postResetPassword(body: { token: string; password: string }) {
-  const r = await fetch(`${base}/api/auth/reset-password`, {
+  const r = await fetch(`${base}/auth/reset-password`, {
     method: "POST",
     headers: mergeHeaders(
       { "Content-Type": "application/json" },
@@ -146,7 +146,7 @@ export async function postResetPassword(body: { token: string; password: string 
 }
 
 export async function getAuthMe(token: string) {
-  const r = await fetch(`${base}/api/auth/me`, {
+  const r = await fetch(`${base}/auth/me`, {
     headers: mergeHeaders(
       { Authorization: `Bearer ${token}` },
       localeHeaders()
@@ -165,7 +165,7 @@ export interface MetaOption {
 }
 
 export async function getMetaCountries() {
-  const r = await fetch(`${base}/api/meta/countries`, {
+  const r = await fetch(`${base}/meta/countries`, {
     headers: mergeHeaders(localeHeaders()),
   });
   if (!r.ok) {
@@ -177,7 +177,7 @@ export async function getMetaCountries() {
 
 export async function getMetaCities(countryCode: string) {
   const r = await fetch(
-    `${base}/api/meta/cities?countryCode=${encodeURIComponent(countryCode)}`,
+    `${base}/meta/cities?countryCode=${encodeURIComponent(countryCode)}`,
     { headers: mergeHeaders(localeHeaders()) }
   );
   if (!r.ok) {
@@ -208,7 +208,7 @@ export interface SearchBody {
 export async function postSearch(body: SearchBody) {
   const lang = getAppLocaleCode();
   const payload = { ...body, language: body.language ?? lang };
-  const r = await fetch(`${base}/api/search`, {
+  const r = await fetch(`${base}/search`, {
     method: "POST",
     headers: mergeHeaders(
       { "Content-Type": "application/json" },
@@ -225,7 +225,7 @@ export async function postSearch(body: SearchBody) {
 }
 
 export async function getHotel(id: string) {
-  const r = await fetch(`${base}/api/hotel/${encodeURIComponent(id)}`, {
+  const r = await fetch(`${base}/hotel/${encodeURIComponent(id)}`, {
     headers: mergeHeaders(localeHeaders()),
   });
   if (!r.ok) throw new Error("Hotel not found");
@@ -270,7 +270,7 @@ export async function postHotelRates(
   const lang = getAppLocaleCode();
   const payload = { ...body, language: body.language ?? lang };
   const r = await fetch(
-    `${base}/api/hotel/${encodeURIComponent(hotelId)}/rates`,
+    `${base}/hotel/${encodeURIComponent(hotelId)}/rates`,
     {
       method: "POST",
       headers: mergeHeaders(
@@ -296,7 +296,7 @@ export interface ContactPayload {
 }
 
 export async function postContact(body: ContactPayload) {
-  const r = await fetch(`${base}/api/contact`, {
+  const r = await fetch(`${base}/contact`, {
     method: "POST",
     headers: mergeHeaders(
       { "Content-Type": "application/json" },
@@ -326,7 +326,7 @@ export async function postBookingPrebook(
   if (token) {
     headers.Authorization = `Bearer ${token}`;
   }
-  const r = await fetch(`${base}/api/booking/prebook`, {
+  const r = await fetch(`${base}/booking/prebook`, {
     method: "POST",
     headers,
     body: JSON.stringify(payload),
@@ -369,7 +369,7 @@ export async function postBooking(
   if (token) {
     headers.Authorization = `Bearer ${token}`;
   }
-  const r = await fetch(`${base}/api/booking`, {
+  const r = await fetch(`${base}/booking`, {
     method: "POST",
     headers,
     body: JSON.stringify(payload),
@@ -411,7 +411,7 @@ export async function getUserBookings(
   if (params.page != null) u.set("page", String(params.page));
   if (params.limit != null) u.set("limit", String(params.limit));
   if (params.q?.trim()) u.set("q", params.q.trim());
-  const r = await fetch(`${base}/api/user/bookings?${u}`, {
+  const r = await fetch(`${base}/user/bookings?${u}`, {
     headers: mergeHeaders(
       { Authorization: `Bearer ${token}` },
       localeHeaders()
@@ -451,7 +451,7 @@ export interface BookingInternalDetail {
 
 export async function getBookingDetail(token: string, bookingId: string) {
   const r = await fetch(
-    `${base}/api/bookings/${encodeURIComponent(bookingId)}`,
+    `${base}/bookings/${encodeURIComponent(bookingId)}`,
     {
       headers: mergeHeaders(
         { Authorization: `Bearer ${token}` },
@@ -471,7 +471,7 @@ export async function getBookingDetail(token: string, bookingId: string) {
 
 export async function putBookingCancel(token: string, bookingId: string) {
   const r = await fetch(
-    `${base}/api/bookings/${encodeURIComponent(bookingId)}/cancel`,
+    `${base}/bookings/${encodeURIComponent(bookingId)}/cancel`,
     {
       method: "PUT",
       headers: mergeHeaders(
@@ -496,7 +496,7 @@ export async function putBookingAmend(
   body: { firstName: string; lastName: string; email: string }
 ) {
   const r = await fetch(
-    `${base}/api/bookings/${encodeURIComponent(bookingId)}/amend`,
+    `${base}/bookings/${encodeURIComponent(bookingId)}/amend`,
     {
       method: "PUT",
       headers: mergeHeaders(
