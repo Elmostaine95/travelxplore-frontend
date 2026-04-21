@@ -1,6 +1,6 @@
 import { getAppLocaleCode } from "./localeHeader";
 
-const base = import.meta.env.VITE_API_URL || "http://localhost:8090";
+const base = import.meta.env.VITE_API_URL;
 
 /** ISO-3166-1 alpha-2 hint from browser locale (backend uses this when no CDN geo headers). */
 function clientOriginCountryHeaders(): Record<string, string> {
