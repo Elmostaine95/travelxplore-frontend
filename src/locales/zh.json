@@ -84,7 +84,7 @@
     "contact.labelSubject": "主题",
     "contact.labelMessage": "消息",
     "contact.placeholderName": "您的姓名",
-    "contact.placeholderEmail": "you'@'example.com",
+    "contact.placeholderEmail": "you{'@'}example.com",
     "contact.placeholderSubject": "这是什么内容？",
     "contact.placeholderMessage": "请告诉我们如何帮助您…",
     "contact.send": "发送消息",

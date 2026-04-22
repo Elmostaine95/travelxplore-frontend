@@ -84,7 +84,7 @@
   "contact.labelSubject": "Onderwerp",
   "contact.labelMessage": "Bericht",
   "contact.placeholderName": "Je naam",
-  "contact.placeholderEmail": "you'@'example.com",
+  "contact.placeholderEmail": "you{'@'}example.com",
   "contact.placeholderSubject": "Waar gaat dit over?",
   "contact.placeholderMessage": "Vertel ons hoe we kunnen helpen…",
   "contact.send": "Verstuur bericht",

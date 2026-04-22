@@ -84,7 +84,7 @@
   "contact.labelSubject": "Θέμα",
   "contact.labelMessage": "Μήνυμα",
   "contact.placeholderName": "Το όνομά σας",
-  "contact.placeholderEmail": "you'@'example.com",
+  "contact.placeholderEmail": "you{'@'}example.com",
   "contact.placeholderSubject": "Περί τίνος πρόκειται;",
   "contact.placeholderMessage": "Πείτε μας πώς μπορούμε να βοηθήσουμε…",
   "contact.send": "Αποστολή μηνύματος",

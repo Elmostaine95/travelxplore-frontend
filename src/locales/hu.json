@@ -84,7 +84,7 @@
   "contact.labelSubject": "Tárgy",
   "contact.labelMessage": "Üzenet",
   "contact.placeholderName": "Neved",
-  "contact.placeholderEmail": "you'@'example.com",
+  "contact.placeholderEmail": "you{'@'}example.com",
   "contact.placeholderSubject": "Miről van szó?",
   "contact.placeholderMessage": "Írd meg, miben segíthetünk…",
   "contact.send": "Üzenet küldése",

@@ -84,7 +84,7 @@
   "contact.labelSubject": "Aihe",
   "contact.labelMessage": "Viesti",
   "contact.placeholderName": "Nimesi",
-  "contact.placeholderEmail": "you'@'example.com",
+  "contact.placeholderEmail": "you{'@'}example.com",
   "contact.placeholderSubject": "Mistä on kyse?",
   "contact.placeholderMessage": "Kerro meille, miten voimme auttaa…",
   "contact.send": "Lähetä viesti",

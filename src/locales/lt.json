@@ -84,7 +84,7 @@
   "contact.labelSubject": "Tema",
   "contact.labelMessage": "Žinutė",
   "contact.placeholderName": "Jūsų vardas",
-  "contact.placeholderEmail": "you'@'example.com",
+  "contact.placeholderEmail": "you{'@'}example.com",
   "contact.placeholderSubject": "Apie ką tai?",
   "contact.placeholderMessage": "Pasakykite, kaip galime padėti…",
   "contact.send": "Siųsti žinutę",

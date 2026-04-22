@@ -84,7 +84,7 @@
   "contact.labelSubject": "Subiect",
   "contact.labelMessage": "Mesaj",
   "contact.placeholderName": "Numele tău",
-  "contact.placeholderEmail": "you'@'example.com",
+  "contact.placeholderEmail": "you{'@'}example.com",
   "contact.placeholderSubject": "Despre ce este vorba?",
   "contact.placeholderMessage": "Spune-ne cum te putem ajuta…",
   "contact.send": "Trimite mesaj",

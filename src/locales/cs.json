@@ -84,7 +84,7 @@
   "contact.labelSubject": "Předmět",
   "contact.labelMessage": "Zpráva",
   "contact.placeholderName": "Vaše jméno",
-  "contact.placeholderEmail": "you'@'example.com",
+  "contact.placeholderEmail": "you{'@'}example.com",
   "contact.placeholderSubject": "O co se jedná?",
   "contact.placeholderMessage": "Řekněte nám, jak vám můžeme pomoci…",
   "contact.send": "Odeslat zprávu",

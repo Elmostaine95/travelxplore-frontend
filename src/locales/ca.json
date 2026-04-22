@@ -84,7 +84,7 @@
   "contact.labelSubject": "Assumpte",
   "contact.labelMessage": "Missatge",
   "contact.placeholderName": "El teu nom",
-  "contact.placeholderEmail": "tu'@'exemple.com",
+  "contact.placeholderEmail": "tu{'@'}exemple.com",
   "contact.placeholderSubject": "De què es tracta?",
   "contact.placeholderMessage": "Explica’ns com podem ajudar…",
   "contact.send": "Envia el missatge",
