@@ -84,7 +84,7 @@
   "contact.labelSubject": "Tēma",
   "contact.labelMessage": "Ziņa",
   "contact.placeholderName": "Jūsu vārds",
-  "contact.placeholderEmail": "you@example.com",
+  "contact.placeholderEmail": "you'@'example.com",
   "contact.placeholderSubject": "Par ko tas ir?",
   "contact.placeholderMessage": "Pastāstiet, kā mēs varam palīdzēt…",
   "contact.send": "Nosūtīt ziņu",

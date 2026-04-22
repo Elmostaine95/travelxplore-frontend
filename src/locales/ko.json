@@ -84,7 +84,7 @@
   "contact.labelSubject": "제목",
   "contact.labelMessage": "메시지",
   "contact.placeholderName": "이름을 입력하세요",
-  "contact.placeholderEmail": "you@example.com",
+  "contact.placeholderEmail": "you'@'example.com",
   "contact.placeholderSubject": "어떤 내용인가요?",
   "contact.placeholderMessage": "어떻게 도와드릴까요…",
   "contact.send": "메시지 보내기",

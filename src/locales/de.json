@@ -84,7 +84,7 @@
   "contact.labelSubject": "Betreff",
   "contact.labelMessage": "Nachricht",
   "contact.placeholderName": "Dein Name",
-  "contact.placeholderEmail": "you@example.com",
+  "contact.placeholderEmail": "you'@'example.com",
   "contact.placeholderSubject": "Worum geht es?",
   "contact.placeholderMessage": "Sag uns, wie wir helfen können…",
   "contact.send": "Nachricht senden",

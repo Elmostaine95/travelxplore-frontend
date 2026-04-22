@@ -84,7 +84,7 @@
   "contact.labelSubject": "Predmet",
   "contact.labelMessage": "Poruka",
   "contact.placeholderName": "Vaše ime",
-  "contact.placeholderEmail": "you@example.com",
+  "contact.placeholderEmail": "you'@'example.com",
   "contact.placeholderSubject": "O čemu se radi?",
   "contact.placeholderMessage": "Recite nam kako možemo pomoći…",
   "contact.send": "Pošalji poruku",
