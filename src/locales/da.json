@@ -84,7 +84,7 @@
   "contact.labelSubject": "Emne",
   "contact.labelMessage": "Besked",
   "contact.placeholderName": "Dit navn",
-  "contact.placeholderEmail": "you{'@'}example.com",
+  "contact.placeholderEmail": "you{at}example.com",
   "contact.placeholderSubject": "Hvad drejer det sig om?",
   "contact.placeholderMessage": "Fortæl os, hvordan vi kan hjælpe…",
   "contact.send": "Send besked",

@@ -84,7 +84,7 @@
   "contact.labelSubject": "Konu",
   "contact.labelMessage": "Mesaj",
   "contact.placeholderName": "Adınız",
-  "contact.placeholderEmail": "you{'@'}example.com",
+  "contact.placeholderEmail": "you{at}example.com",
   "contact.placeholderSubject": "Konu nedir?",
   "contact.placeholderMessage": "Size nasıl yardımcı olabileceğimizi anlatın…",
   "contact.send": "Mesaj gönder",

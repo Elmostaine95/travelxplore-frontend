@@ -205,7 +205,7 @@ async function onSubmit() {
                     name="email"
                     autocomplete="email"
                     class="w-full px-4 py-3 rounded-xl bg-white/[0.05] border border-white/10 text-white placeholder:text-white/25 focus:outline-none focus:border-crimson-600/60 focus:ring-1 focus:ring-crimson-600/30 transition-colors"
-                    :placeholder="t('contact.placeholderEmail')"
+                    :placeholder="t('contact.placeholderEmail', { at: '@' })"
                     :class="errors.email ? 'border-red-500/50' : ''"
                   />
                   <p v-if="errors.email" class="text-xs text-red-400/90">

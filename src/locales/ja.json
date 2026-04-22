@@ -84,7 +84,7 @@
   "contact.labelSubject": "件名",
   "contact.labelMessage": "メッセージ",
   "contact.placeholderName": "お名前",
-  "contact.placeholderEmail": "you{'@'}example.com",
+  "contact.placeholderEmail": "you{at}example.com",
   "contact.placeholderSubject": "ご用件は何ですか？",
   "contact.placeholderMessage": "どのようにお手伝いできるかお知らせください…",
   "contact.send": "送信",

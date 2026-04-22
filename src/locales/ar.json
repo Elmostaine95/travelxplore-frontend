@@ -86,7 +86,7 @@
   "contact.labelSubject": "الموضوع",
   "contact.labelMessage": "الرسالة",
   "contact.placeholderName": "اسمك",
-  "contact.placeholderEmail": "you{'@'}example.com",
+  "contact.placeholderEmail": "you{at}example.com",
   "contact.placeholderSubject": "عن ماذا تتعلق رسالتك؟",
   "contact.placeholderMessage": "أخبرنا كيف يمكننا المساعدة…",
   "contact.send": "إرسال الرسالة",

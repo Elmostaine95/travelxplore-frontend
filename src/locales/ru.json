@@ -84,7 +84,7 @@
   "contact.labelSubject": "Тема",
   "contact.labelMessage": "Сообщение",
   "contact.placeholderName": "Ваше имя",
-  "contact.placeholderEmail": "you{'@'}example.com",
+  "contact.placeholderEmail": "you{at}example.com",
   "contact.placeholderSubject": "О чём это?",
   "contact.placeholderMessage": "Расскажите, как мы можем помочь…",
   "contact.send": "Отправить сообщение",

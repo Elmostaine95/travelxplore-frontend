@@ -84,7 +84,7 @@
   "contact.labelSubject": "Teema",
   "contact.labelMessage": "Sõnum",
   "contact.placeholderName": "Sinu nimi",
-  "contact.placeholderEmail": "you{'@'}example.com",
+  "contact.placeholderEmail": "you{at}example.com",
   "contact.placeholderSubject": "Millest see on?",
   "contact.placeholderMessage": "Räägi meile, kuidas saame aidata…",
   "contact.send": "Saada sõnum",
