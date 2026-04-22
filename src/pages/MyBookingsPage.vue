@@ -58,7 +58,12 @@ function dateRange(row: UserBookingItem) {
 }
 
 async function load() {
-  if (!auth.token) return;
+  if (!auth.token) {
+    loading.value = false;
+    bookings.value = [];
+    total.value = 0;
+    return;
+  }
   loading.value = true;
   errorMsg.value = null;
   try {
@@ -67,8 +72,8 @@ async function load() {
       limit,
       q: searchInput.value,
     });
-    bookings.value = res.bookings;
-    total.value = res.total;
+    bookings.value = res.bookings ?? [];
+    total.value = res.total ?? 0;
   } catch (e) {
     errorMsg.value = (e as Error).message;
     bookings.value = [];
